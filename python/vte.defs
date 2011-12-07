@@ -787,6 +787,49 @@
   (return-type "int")
 )
 
+(define-method search_find_next
+  (of-object "VteTerminal")
+  (c-name "vte_terminal_search_find_next")
+  (return-type "gboolean")
+)
+
+(define-method search_find_previous
+  (of-object "VteTerminal")
+  (c-name "vte_terminal_search_find_previous")
+  (return-type "gboolean")
+)
+
+(define-method search_get_gregex
+  (of-object "VteTerminal")
+  (c-name "vte_terminal_search_get_gregex")
+  (return-type "GRegex*")
+)
+
+(define-method search_get_wrap_around
+  (of-object "VteTerminal")
+  (c-name "vte_terminal_search_get_wrap_around")
+  (return-type "gboolean")
+)
+
+(define-method search_set_gregex 
+  (of-object "VteTerminal")
+  (c-name "vte_terminal_search_set_gregex ")
+  (return-type "none")
+  (parameters
+    '("GRegex*" "regex")
+  )
+)
+
+(define-method search_set_wrap_around 
+  (of-object "VteTerminal")
+  (c-name "vte_terminal_search_set_wrap_around ")
+  (return-type "none")
+  (parameters
+    '("gboolean" "wrap_around")
+  )
+)
+
+
 
 
 ;; From vtetypebuiltins.h
