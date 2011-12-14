@@ -605,8 +605,8 @@
   (c-name "vte_terminal_match_add_gregex")
   (return-type "int")
   (parameters
-    '("GRegex*" "regex")
-    '("GRegexMatchFlags" "flags" (default 0))
+    '("const-char*" "regex")
+    '("glong" "flags" (default 0))
   )
 )
 
